@@ -1,0 +1,126 @@
+<resources>
+	<!-- BaseActivity -->
+	<string name="no_permission_dialog_message">Необходимо разрешить запись на внешнее хранилище.</string>
+	<string name="no_permission_dialog_ok">Хорошо</string>
+	<string name="no_permission_dialog_cancel">Отмена</string>
+	<string name="action_filter">Фильтровать</string>
+
+	<!-- MainActivity -->
+	<string name="watched_upgrade_dialog_title">Изменение перепросмотров</string>
+	<string name="watched_upgrade_dialog_message">Все \'перепросмотренные\' позиции теперь обозначаются как \'просмотренные.\' Сделовательно, все просмотры фильма или серии необходимо увеличить на единицу, чтобы сохранить прежний смысл. Хотите ли Вы автоматически сделать это?\n\nПримечание: если фильм не был добавлен в \'просмотренные\' и не был перепросмотрен, то изменений не произойдет.</string>
+	<string name="watched_upgrade_dialog_positive">Да</string>
+	<string name="watched_upgrade_dialog_negative">Нет</string>
+
+	<!-- CastActivity (quotes are to enforce the spaces) -->
+	<string name="place_of_birth">"Место рождения: "</string>
+	<string name="birthday">"Дата рождения: "</string>
+	<string name="no_biography">"Биография отсутствует: "</string>
+	<string name="cast_movie_title">Играл в</string>
+	<string name="crew_movie_title">Участвовал в создании</string>
+
+	<!-- DetailActivity (quotes are to enforce the spaces) -->
+	<string name="movie_added">Фильм добавлен</string>
+	<string name="series_added">Сериал добавлен</string>
+	<string name="show_added_error">Произошла ошибка при добавлении в базу данных.</string>
+	<string name="start_date">"Дата начала: "</string>
+	<string name="start_date_unknown">Дата начала неизвестна.</string>
+	<string name="finish_date">"Дата окончания: "</string>
+	<string name="finish_date_unknown">Дата окончания неизвестна.</string>
+	<string name="times_watched">"Число просмотров: "</string>
+	<string name="episodes_seen">"Просмотрено эпизодов: "</string>
+	<string name="change_start_date_2">"Дата начала: "</string>
+	<string name="change_finish_date_2">"Дата окончания: "</string>
+	<string name="change_watched_times">"Число просмотров: "</string>
+	<string name="cast_title">В ролях</string>
+	<string name="crew_title">Создатели</string>
+	<string name="similar_movie_title">Похожие фильмы</string>
+	<string name="category_picker">Pick the appropriate category</string>
+	<string-array name="categories">
+		<item>@string/watching</item>
+		<item>@string/plan_to_watch</item>
+		<item>@string/watched</item>
+		<item>@string/on_hold</item>
+		<item>@string/dropped</item>
+	</string-array>
+	<string name="show_category">"Категория: "</string>
+
+	<!-- FilterActivity -->
+	<string name="sort_by">Сортировать по</string>
+	<string name="default_sort">Default</string>
+	<string name="most_popular">Популярности</string>
+	<string name="best_rated">Оценкам</string>
+	<string name="release_date">Дате выхода</string>
+	<string name="alphabetic_order">Алфавиту</string>
+	<string name="categories">Категории</string>
+	<string name="watching">Смотрю</string>
+	<string name="plan_to_watch">Собираюсь посмотреть</string>
+	<string name="watched">Просмотренные</string>
+	<string name="on_hold">Досмотреть позже</string>
+	<string name="dropped">Передумал смотреть</string>
+	<string name="dates">Даты</string>
+	<string name="in_the_theater_right_now">Сегодня в кино</string>
+	<string name="between_two_dates">В промежутке между</string>
+	<string name="end_date">"Дата окончания: "</string>
+	<string name="genres">Жанры</string>
+	<string name="advanced">Дополнительно</string>
+	<string name="keyword_text">Вы можете фильтровать по ключевым словам, вводя их ID в соотвествующее поле. Логика следующая:\n * Разделяйте их запятой, чтобы использовать оба слова.\n * Разделяйте слова знаком | (или), если хотите использовать любое из них.</string>
+	<string name="with_keywords_hint">Показывать фильмы с ключевыми словами…</string>
+	<string name="without_keywords_hint">Не показывать фильмы с ключевыми словами…</string>
+
+	<!-- SectionsPagerAdapter -->
+	<string name="movie_tab_title">ФИЛЬМЫ</string>
+	<string name="series_tab_title">СЕРИАЛЫ</string>
+	<string name="saved_tab_title">СПИСКИ</string>
+	<string name="person_tab_title">ЗВЕЗДЫ</string>
+
+	<!-- MovieDatabaseHelper -->
+	<string name="write_to_external_storage_as">"Сохранен как: "</string>
+	<string name="write_to_external_storage_failed">Запись на внешний накопитель невозможна.</string>
+	<string name="choose_export_file">Выберите формат экспорта:</string>
+	<string-array name="export_import_formats">
+		<item>Database</item>
+		<item>JSON</item>
+	</string-array>
+	<string name="choose_file">Выберите файл для импорта:</string>
+	<string name="import_cancel">Отмена</string>
+	<string name="file_not_found_exception">Файл не найден!</string>
+
+	<!-- search_bar -->
+	<string name="hint_search">Найти…</string>
+
+	<!-- database_menu -->
+	<string name="action_export">Экспорт</string>
+	<string name="action_import">Импорт</string>
+
+	<!-- options_menu -->
+	<string name="action_search">Поиск</string>
+
+	<!-- save_menu -->
+	<string name="action_save">Сохранить</string>
+
+	<!-- Preferences -->
+	<string name="title_general">Общие</string>
+	<string name="title_show_cast">Показывать актеров</string>
+	<string name="title_show_crew">Показывать создателей</string>
+	<string name="title_show_similar_shows">Показывать похожие фильмы</string>
+	<string name="title_show_save_dialog">Показывать варианты добавления</string>
+	<string name="title_show_representation">Отображение</string>
+	<string name="title_shows_in_grid">Показывать фильмы сеткой</string>
+	<string name="title_grid_size">Размер сетки</string>
+	<string name="summary_grid_size">Число позиций в ряду</string>
+	<string name="title_data_usage">Трафик</string>
+	<string name="title_live_search">Включить живой поиск</string>
+	<string name="title_hide_tabs">Отображение вкладок</string>
+	<string name="summary_hide_tabs">Чтобы изменения вступили в силу, необходимо перезапустить приложение.</string>
+	<string name="title_hide_movies_tab">Скрыть вкладку \'Фильмы\'</string>
+	<string name="title_hide_series_tab">Скрыть вкладку \'Сериалы\'</string>
+	<string name="title_hide_saved_tab">Скрыть вкладку \'Списки\'</string>
+	<string name="title_hide_person_tab">Скрыть вкладку \'Звезды\'</string>
+	<string name="title_source_code">Kuria Wairore @ Facebook</string>
+	<string name="text_tmdb_credits">**Movie plus uses The Movie Database API.**\nThis App was developed with ❤ by Kuria Wairore &#xA9; 2020.</string>
+
+	<string name="action_settings">Настройки</string>
+
+	<!-- (General) Toasts -->
+	<string name="no_internet_connection">Kindly connect to the Internet😪</string>
+</resources>

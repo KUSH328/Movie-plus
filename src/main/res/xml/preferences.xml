@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory
+		android:title="@string/title_general">
+
+		<SwitchPreference
+			android:title="@string/title_show_cast"
+			android:key="key_show_cast"
+			android:defaultValue="true" />
+
+		<SwitchPreference
+			android:title="@string/title_show_crew"
+			android:key="key_show_crew"
+			android:defaultValue="true" />
+
+		<SwitchPreference
+			android:title="@string/title_show_similar_shows"
+			android:key="key_show_similar_movies"
+			android:defaultValue="true" />
+
+		<SwitchPreference
+			android:title="@string/title_show_save_dialog"
+			android:key="key_show_save_dialog"
+			android:defaultValue="false" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/title_show_representation">
+
+		<SwitchPreference
+			android:title="@string/title_shows_in_grid"
+			android:key="key_show_shows_grid"
+			android:defaultValue="true" />
+
+		<org.notabug.lifeuser.movieplus.NumberPickerPreference
+			android:title="@string/title_grid_size"
+			android:summary="@string/summary_grid_size"
+			android:key="key_grid_size_number"
+			android:defaultValue="3"
+			android:dependency="key_show_shows_grid" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/title_data_usage">
+
+		<SwitchPreference
+			android:title="@string/title_live_search"
+			android:key="key_live_search"
+			android:defaultValue="true" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/title_hide_tabs"
+		android:summary="@string/summary_hide_tabs">
+
+		<Preference
+			android:summary="@string/summary_hide_tabs"
+			android:selectable="false" />
+
+		<CheckBoxPreference
+			android:title="@string/title_hide_movies_tab"
+			android:key="key_hide_movies_tab"
+			android:defaultValue="false" />
+
+		<CheckBoxPreference
+			android:title="@string/title_hide_series_tab"
+			android:key="key_hide_series_tab"
+			android:defaultValue="false" />
+
+		<CheckBoxPreference
+			android:title="@string/title_hide_saved_tab"
+			android:key="key_hide_saved_tab"
+			android:defaultValue="false" />
+
+		<CheckBoxPreference
+			android:title="@string/title_hide_person_tab"
+			android:key="key_hide_person_tab"
+			android:defaultValue="false" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="Social Media">
+
+		<Preference
+			android:title="@string/title_source_code">
+			<intent android:action="android.intent.action.VIEW"
+					android:data="https://facebook.com/kuriawairore" />
+		</Preference>
+
+		<Preference
+			android:title="License and Copyright"
+			android:summary="@string/text_tmdb_credits"/>
+
+	</PreferenceCategory>
+
+</PreferenceScreen>
